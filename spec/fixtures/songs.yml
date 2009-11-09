@@ -1,0 +1,26 @@
+# == Schema Information
+#
+# Table name: songs
+#
+#  id         :integer         not null, primary key
+#  name       :string(255)
+#  album      :string(255)
+#  artist     :string(255)
+#  length     :integer
+#  created_at :datetime
+#  updated_at :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  album: MyString
+  artist: MyString
+  length: 1
+
+two:
+  name: MyString
+  album: MyString
+  artist: MyString
+  length: 1

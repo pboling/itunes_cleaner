@@ -1,0 +1,58 @@
+sudo gem install spork
+ruby script/generate cucumber --spork
+ruby script/generate rspec
+
+ruby script/generate feature Song \
+name:string \
+album:string \
+artist:string \
+length:integer
+
+ruby script/generate feature Version \
+song_id:integer \
+encoding_id:integer \
+bitrate_id:integer
+
+ruby script/generate feature Library \
+name:string \
+location:string \
+cleaned_at:datetime
+
+ruby script/generate feature LibrarySong \
+song_id:integer \
+library_id:integer
+
+ruby script/generate feature Bitrate name:string code:integer
+ruby script/generate feature Encoding name:string code:string
+
+rake db:migrate
+rake db:setup
+rake features
+#tests should fail
+
+ruby script/generate rspec_scaffold Song \
+name:string \
+album:string \
+artist:string \
+length:integer
+
+ruby script/generate rspec_scaffold Version \
+song_id:integer \
+encoding_id:integer \
+bitrate_id:integer
+
+ruby script/generate rspec_scaffold Library \
+name:string \
+location:string \
+cleaned_at:datetime
+
+ruby script/generate rspec_scaffold LibrarySong \
+song_id:integer \
+library_id:integer
+
+ruby script/generate rspec_scaffold Bitrate name:string code:integer
+ruby script/generate rspec_scaffold Encoding name:string code:string
+
+rake db:migrate
+
+spork rspec -b

@@ -1,0 +1,23 @@
+# == Schema Information
+#
+# Table name: versions
+#
+#  id          :integer         not null, primary key
+#  song_id     :integer
+#  encoding_id :integer
+#  bitrate_id  :integer
+#  created_at  :datetime
+#  updated_at  :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  song_id: 1
+  encoding_id: 1
+  bitrate_id: 1
+
+two:
+  song_id: 1
+  encoding_id: 1
+  bitrate_id: 1

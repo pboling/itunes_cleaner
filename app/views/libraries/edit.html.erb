@@ -1,0 +1,24 @@
+<h1>Editing library</h1>
+
+<% form_for(@library) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :location %><br />
+    <%= f.text_field :location %>
+  </p>
+  <p>
+    <%= f.label :cleaned_at %><br />
+    <%= f.datetime_select :cleaned_at %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @library %> |
+<%= link_to 'Back', libraries_path %>

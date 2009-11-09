@@ -1,0 +1,20 @@
+# == Schema Information
+#
+# Table name: bitrates
+#
+#  id         :integer         not null, primary key
+#  name       :string(255)
+#  code       :integer
+#  created_at :datetime
+#  updated_at :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  code: 1
+
+two:
+  name: MyString
+  code: 1

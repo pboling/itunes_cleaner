@@ -1,0 +1,18 @@
+<p>
+  <b>Song:</b>
+  <%=h @version.song_id %>
+</p>
+
+<p>
+  <b>Encoding:</b>
+  <%=h @version.encoding_id %>
+</p>
+
+<p>
+  <b>Bitrate:</b>
+  <%=h @version.bitrate_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_version_path(@version) %> |
+<%= link_to 'Back', versions_path %>

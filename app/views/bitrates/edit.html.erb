@@ -1,0 +1,20 @@
+<h1>Editing bitrate</h1>
+
+<% form_for(@bitrate) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :code %><br />
+    <%= f.text_field :code %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @bitrate %> |
+<%= link_to 'Back', bitrates_path %>

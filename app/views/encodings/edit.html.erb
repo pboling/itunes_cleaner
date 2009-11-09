@@ -1,0 +1,20 @@
+<h1>Editing encoding</h1>
+
+<% form_for(@encoding) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :code %><br />
+    <%= f.text_field :code %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @encoding %> |
+<%= link_to 'Back', encodings_path %>

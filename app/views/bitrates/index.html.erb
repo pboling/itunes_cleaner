@@ -1,0 +1,22 @@
+<h1>Listing bitrates</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Code</th>
+  </tr>
+
+<% @bitrates.each do |bitrate| %>
+  <tr>
+    <td><%=h bitrate.name %></td>
+    <td><%=h bitrate.code %></td>
+    <td><%= link_to 'Show', bitrate %></td>
+    <td><%= link_to 'Edit', edit_bitrate_path(bitrate) %></td>
+    <td><%= link_to 'Destroy', bitrate, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New bitrate', new_bitrate_path %>

@@ -1,0 +1,22 @@
+<h1>Listing encodings</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Code</th>
+  </tr>
+
+<% @encodings.each do |encoding| %>
+  <tr>
+    <td><%=h encoding.name %></td>
+    <td><%=h encoding.code %></td>
+    <td><%= link_to 'Show', encoding %></td>
+    <td><%= link_to 'Edit', edit_encoding_path(encoding) %></td>
+    <td><%= link_to 'Destroy', encoding, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New encoding', new_encoding_path %>

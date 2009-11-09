@@ -1,0 +1,24 @@
+<h1>Editing version</h1>
+
+<% form_for(@version) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :song_id %><br />
+    <%= f.text_field :song_id %>
+  </p>
+  <p>
+    <%= f.label :encoding_id %><br />
+    <%= f.text_field :encoding_id %>
+  </p>
+  <p>
+    <%= f.label :bitrate_id %><br />
+    <%= f.text_field :bitrate_id %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @version %> |
+<%= link_to 'Back', versions_path %>

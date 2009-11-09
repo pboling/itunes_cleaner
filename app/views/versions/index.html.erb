@@ -1,0 +1,24 @@
+<h1>Listing versions</h1>
+
+<table>
+  <tr>
+    <th>Song</th>
+    <th>Encoding</th>
+    <th>Bitrate</th>
+  </tr>
+
+<% @versions.each do |version| %>
+  <tr>
+    <td><%=h version.song_id %></td>
+    <td><%=h version.encoding_id %></td>
+    <td><%=h version.bitrate_id %></td>
+    <td><%= link_to 'Show', version %></td>
+    <td><%= link_to 'Edit', edit_version_path(version) %></td>
+    <td><%= link_to 'Destroy', version, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New version', new_version_path %>

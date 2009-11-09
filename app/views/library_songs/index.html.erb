@@ -1,0 +1,22 @@
+<h1>Listing library_songs</h1>
+
+<table>
+  <tr>
+    <th>Song</th>
+    <th>Library</th>
+  </tr>
+
+<% @library_songs.each do |library_song| %>
+  <tr>
+    <td><%=h library_song.song_id %></td>
+    <td><%=h library_song.library_id %></td>
+    <td><%= link_to 'Show', library_song %></td>
+    <td><%= link_to 'Edit', edit_library_song_path(library_song) %></td>
+    <td><%= link_to 'Destroy', library_song, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New library_song', new_library_song_path %>
