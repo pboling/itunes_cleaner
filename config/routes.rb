@@ -1,4 +1,16 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :bitrates
+
+  map.resources :library_songs
+
+  map.resources :libraries
+
+  map.resources :versions
+
+  map.resources :encodings
+
+  map.resources :songs
+
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:

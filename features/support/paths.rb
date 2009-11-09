@@ -10,6 +10,30 @@ module NavigationHelpers
     
     when /the home\s?page/
       '/'
+    when /the new encoding page/
+      new_encoding_path
+
+    when /the new bitrate page/
+      new_bitrate_path
+
+    when /the new library_song page/
+      new_library_song_path
+
+    when /the new library page/
+      new_library_path
+
+    when /the new version page/
+      new_version_path
+
+    when /the new version page/
+      new_version_path
+
+    when /the new song page/
+      new_song_path
+
+    when /the new encoding page/
+      new_encoding_path
+
     when /the new encoging page/
       new_encoging_path
 
