@@ -1,4 +1,7 @@
 .idea
 db/*.sqlite3
-log/*
-tmp/*
+log/*.log
+tmp/**/*
+doc/api
+doc/app
+doc/plugins
