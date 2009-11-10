@@ -55,4 +55,6 @@ ruby script/generate rspec_scaffold Encoding name:string code:string
 
 rake db:migrate
 
+git submodule add git://github.com/pboling/activerecordplist.git vendor/plugins/activerecordplist
+
 spork rspec -b

@@ -10,3 +10,6 @@
 [submodule "vendor/plugins/rspec-rails"]
 	path = vendor/plugins/rspec-rails
 	url = git://github.com/dchelimsky/rspec-rails.git
+[submodule "vendor/plugins/activerecordplist"]
+	path = vendor/plugins/activerecordplist
+	url = git://github.com/pboling/activerecordplist.git
